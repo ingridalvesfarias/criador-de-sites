@@ -1,0 +1,140 @@
+:root {
+    --bg-dark: #09090b;
+    --bg-card: #141419;
+    --accent: #c614ab;
+    --text-primary: #fafafa;
+    --text-muted: #71717a;
+    --border: #27272a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.etiqueta {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h1 span {
+    color: var(--accent);
+}
+
+.subtitulo {
+    color: var(--text-muted);
+    margin-top: 16px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.caixa-entrada {
+    width: 100%;
+    max-width: 620px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 12px;
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid var(--border);
+    transition: border-color 0.3s;
+}
+
+.caixa-entrada:focus-within {
+    border-color: var(--accent);
+}
+
+.texto-pagina {
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 15px;
+    resize: none;
+    height: 60px;
+    padding: 10px;
+}
+
+button {
+    width: 20%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:disabled {
+    background: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.caixa-resultado {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    padding: 24px;
+    margin-top: 40px;
+    background: #111114;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    gap: 24px;
+}
+
+.bloco-codigo {
+    width: 30%;
+    background: #0c0c0f;
+    padding: 20px;
+    font-size: 13px;
+    color: #22c55e;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    height: 600px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.bloco-site {
+    width: 70%;
+    height: 600px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: #000000;
+}
+
+@media (max-width: 900px) {
+    .caixa-resultado {
+        flex-direction: column;
+    }
+
+    .bloco-codigo,
+    .bloco-site {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Sites | Ingrid Farias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="etiqueta">Gerador com Inteligência Artificial</p>
+
+    <h1>Crie sua Página <span>com um prompt</span></h1>
+
+    <p class="subtitulo">Descreva o seu negócio e veja a IA criar uma página profissional em segundos.</p>
+
+    <div class="caixa-entrada">
+        <textarea class="texto-pagina" placeholder="Descreva seu negócio. Ex: Cafeteria, Loja de Plantas, Academia..."></textarea>
+        <button id="btnGerar" onclick="gerarCodigo()">Gerar</button>
+    </div>
+
+    <div class="caixa-resultado">
+        <div class="bloco-codigo" id="blocoCodigo">// O código gerado aparecerá aqui...</div>
+        <iframe class="bloco-site" id="blocoSite"></iframe>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
