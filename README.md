@@ -41,3 +41,5 @@ A aplicação adota uma arquitetura baseada em tecnologias web nativas (**Vanill
 - **Groq API Cloud:** Integração assíncrona com o modelo de inferência de altíssima velocidade **`llama-3.3-70b-versatile`** através do endpoint HTTP `POST`.
 
 ---
+
+<img src="img/imagem do projeto.png" alt="imagem do projeto">
